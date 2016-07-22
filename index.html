@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Elm Amsterdam - How to convince your boss to start using Elm?</title>
+
+    <meta name="description" content=">Elm Amsterdam - How to convince your boss to start using Elm?">
+    <meta name="author" content="Mats Stijlaart">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="bower_components/reveal.js/css/reveal.css">
+    <link rel="stylesheet" href="bower_components/reveal.js/lib/css/zenburn.css">
+    <link rel="stylesheet" href="bower_components/avisi-reveal-js-template/avisi.css" id="theme">
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+
+    <style>
+        pre {
+            padding: 5px !important;
+            max-width: 700px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="reveal">
+        <div class="company"></div>
+        <!-- Any section element inside of this container is displayed as a slide -->
+
+        <div class="slides">
+
+            <section>
+                <!-- <h1>Elm Amsterdam</h1> -->
+                <h2>How to convince your boss to start using Elm?</h2>
+                <p>
+                    <small>2016-07-26 / Mats Stijlaart</small>
+                </p>
+            </section>
+
+            <!-- Introduction -->
+            <section>
+                <section>
+                    <h2>Introduction</h2>
+                    <ul>
+                        <li class="fragment">Why?</li>
+                        <li class="fragment">What I did</li>
+                    </ul>
+
+                </section>
+            </section>
+
+            <!-- The problem -->
+            <section>
+                <section>
+                    <h2>The problem</h2>
+                    <p>
+                        <img src="./images/no-problem.jpg" width="400" alt="" />
+                    </p>
+                    <small><a href="http://www.memegen.com/meme/edend3">http://www.memegen.com</a></small>
+                </section>
+                <section>
+                    <h3>Cause 1: Elm is new</h3>
+                    <ul>
+                        <li class="fragment">Small</li>
+                        <li class="fragment">Unknown</li>
+                        <li class="fragment">Not proven (yet)</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Cause 2: My boss runs an organisation</h3>
+                    <ul>
+                        <li class="fragment">Customers for over 10 years</li>
+                        <li class="fragment">A third party approves releases</li>
+                        <li class="fragment">Customer pays for working software</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>So why is this a problem?</h3>
+                    <ul>
+                        <li class="fragment">My boss does not sell technology.</li>
+                        <li class="fragment">Customer is not gonna pay for refactoring</li>
+                        <li class="fragment">'I heard Angular and React are nice'</li>
+                    </ul>
+                </section>
+            </section>
+
+            <!-- Arguments -->
+            <section>
+                <section>
+                    <h2>The Arguments</h2>
+                    <img src="./images/being-right.jpg" alt="" />
+                </section>
+                <section>
+                    <h4>You are the tech guy/girl</h4>
+                    <ul>
+                        <li class="fragment">Give examples</li>
+                        <li class="fragment">Be enthousiastic</li>
+                        <li class="fragment">If your boss is a tech person, send him some talks</li>
+                        <li class="fragment">Your boss should trust you</li>
+                    </ul>
+                </section>
+                <section>
+                    <h4>Everything comes and goes</h4>
+                    <p>
+                        <img src="./images/icecream.jpg" alt="" />
+                    </p>
+                    <small><a href="https://www.pinterest.com/icecreammandan/ice-cream-humor/">https://www.pinterest.com</a></small>
+
+                    <ul class="fragment">
+                        <li>What is the oldest front-end technology that you run?</li>
+                        <li>Easier to choose for new things</li>
+                        <li>'Is Elm gonna make it?' becomes less relevant</li>
+                    </ul>
+                </section>
+                <section>
+                    <h4>Batteries included</h4>
+                    <ul>
+                        <li class="fragment">HTML/CSS/JS</li>
+                        <li class="fragment">1 websocket library</li>
+                    </ul>
+                </section>
+                <section>
+                    <h4>Community maintaince the main packages</h4>
+                    <p>
+                        <img src="./images/make-all-the-things.jpg" alt="" />
+                    </p>
+                    <small><a href="http://diylol.com/meme-generator/all-the-things/memes/make-all-the-things--5">http://diylol.com/meme-generator</a></small>
+                </section>
+
+                <section>
+                    <h4>Stable software</h4>
+                    <p>
+                        <img src="./images/nuclear.jpg" alt="" />
+                    </p>
+                    <small><a href="https://blogs.thegospelcoalition.org/rayortlund/2014/08/30/how-church-conflict-escalates-to-the-nuclear-option/">https://blogs.thegospelcoalition.org</a></small>
+
+                    <ul>
+                        <li class="fragment">No runtime exceptions</li>
+                        <li class="fragment">Stable fundament for a ecosystem</li>
+                    </ul>
+                </section>
+            </section>
+
+            <!-- Points of Pain  -->
+            <section>
+                <section>
+                    <h2>Points of Pain</h2>
+                    <p>
+                        <img src="./images/chuck-norris.jpg" alt="" />
+                    </p>
+                    <small><a href="http://www.whattoexpect.com/forums/young-moms/topic/terrified-9854.html">http://www.whattoexpect.com</a></small>
+                </section>
+                <section>
+                    <h4>Upgrades</h4>
+                    <ul>
+                        <li class="fragment">All or nothing (also a good thing)</li>
+                        <li class="fragment">
+                            You just have to rip the bandaid of.
+                            <br>
+                            <small>Compare this to Angular, React, ExtJS</small>
+                        </li>
+                        <li class="fragment">Outdated docs/examples</li>
+                    </ul>
+                </section>
+                <section>
+                    <h4>Human Resouces</h4>
+                    <ul>
+                        <li class="fragment">Yet</li>
+                        <li class="fragment">May be a good choice for a startup
+                            <small>elm-discuss: comment by Max Goldstein</small>
+                        </li>
+                        <li class="fragment">IMHO is easier to learn Elm than learn Javascript well</li>
+                    </ul>
+                </section>
+                <section>
+                    <h4>Tooling</h4>
+                    <ul>
+                        <li class="fragment">Build it yourself mentality. Get your hands dirty.</li>
+                        <li class="fragment">Run with maven for example</li>
+                    </ul>
+                </section>
+            </section>
+
+            <!-- How to tackle it -->
+            <section>
+                <section>
+                    <h2>How to tackle it?</h2>
+                    <p class="fragment">
+                        <a href="http://elm-lang.org/blog/how-to-use-elm-at-work">http://elm-lang.org/blog/how-to-use-elm-at-work</a>
+                    </p>
+                </section>
+                <section>
+                    <h4>Start with as simple</h4>
+                </section>
+                <section>
+                    <h4>Why?</h4>
+                    <ul>
+                        <li class="fragment">Small investment, you can still drop it</li>
+                        <li class="fragment">Does not have a lot of integration, thus easy to setup</li>
+                        <li class="fragment">No JS interop, no sigle page app.</li>
+                    </ul>
+                </section>
+                <section>
+                    <h4>Start building, test and ship!</h4>
+                    <ul>
+                        <li class="fragment">Evaluate the process.</li>
+                        <li class="fragment">Is Elm working for me?</li>
+                        <li class="fragment">Important to redo stuff you have learned from.</li>
+                    </ul>
+                </section>
+                <section>
+                    <h4>Integrate with the exising project</h4>
+                    <ul>
+                        <li class="fragment">Make it work!</li>
+                        <li class="fragment">Write/update the README!</li>
+                        <li class="fragment">Colleagues start trusting it on their machine.</li>
+                    </ul>
+                </section>
+                <section>
+                    <h4>Become the advocate</h4>
+                    <img src="./images/call-saul.jpg" width="600" alt="" />
+                    <p>
+                        <a href="http://blogs-images.forbes.com/hnewman/files/2016/01/unnamed-1200x675.jpg">http://www.forbes.com/forbes/</a>
+                    </p>
+                    <ul class="fragment">
+                        <li>Pairing with colleagues</li>
+                        <li>Give a talk in the office</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h4>Let an intern work on the Elm code</h4>
+                    <img src="./images/jenga.gif" alt="" />
+                    <p>
+                        <a href="http://thecodinglove.com/post/145297461402/when-i-make-a-minor-change-in-a-legacy-code">http://thecodinglove.com/post/145297461402</a>
+                    </p>
+                </section>
+
+                <section>
+                    <h4>Adapt or die</h4>
+                    <p>
+                        If your boss/colleagues do not want to change...
+                    </p>
+                </section>
+
+                <section>
+                    <h4>Summarise</h4>
+                    <ul>
+                        <li>Start simple</li>
+                        <li>Show that it works</li>
+                        <li>Take responsibility</li>
+                        <li>Push it</li>
+                    </ul>
+                </section>
+            </section>
+
+            <section>
+                <section>
+                    <h2>Conclusion</h2>
+                </section>
+                <section>
+                    <h2>Questions</h2>
+                </section>
+                <section>
+                    <h2>Sources</h2>
+                    <ul style="font-size: 80%">
+                        <li>
+                            <a href="https://groups.google.com/forum/#!topic/elm-discuss/BnvrQt0LIN4">
+                              How to convince your boss to start using Elm in the company?
+                            </a>
+                        </li>
+                        <li><a href="http://elm-lang.org/blog/how-to-use-elm-at-work">How to use Elm at work?</a></li>
+                    </ul>
+                </section>
+            </section>
+        </div>
+    </div>
+
+    <script src="bower_components/reveal.js/lib/js/head.min.js"></script>
+    <script src="bower_components/reveal.js/js/reveal.js"></script>
+
+    <script type="text/javascript">
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history: true,
+            center: true,
+            slideNumber: true,
+            transition: 'slide',
+            dependencies: [{
+                src: 'bower_components/reveal.js/plugin/highlight/highlight.js',
+                async: false,
+                callback: function() {
+                    hljs.initHighlightingOnLoad();
+                }
+            }]
+        });
+    </script>
+
+</body>
+
+</html>
